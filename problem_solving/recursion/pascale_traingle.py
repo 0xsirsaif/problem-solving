@@ -14,5 +14,6 @@ def pascale_traingle(n):
         inner_list.append(1)
         last_list = inner_list
         return last_list
-print(pascale_traingle(6))
+
+print(pascale_traingle(2))
 
