@@ -6,7 +6,6 @@ class Solution:
         if str(x) == rev_num:
             return True
 
-
 def reverse(num):
     rev = 0
     while num > 0:
@@ -17,4 +16,4 @@ def reverse(num):
         print("num2 >>  ", num)
         print("===================")
     return rev
-print(reverse(100))
+# print(reverse(123))
