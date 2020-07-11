@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a55baa78-6e96-450f-b024-2852fe747d5d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/grokking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/grokking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/problem_solving.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/problem_solving.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursion/pascale_traingle.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursion/pascale_traingle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/python.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,15 +36,15 @@
   <component name="ProjectId" id="1SoiN0Wy9CVZ9Ep0yocvo4Gzj5C" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.pascale_traingle">
+  <component name="RunManager" selected="Python.longest_common_prefix">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="problem_solving" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,7 +129,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="c-4.9" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="longest_common_prefix" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="problem_solving" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,11 +137,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_book/recursion_ch4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Leetcode/easy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_book/recursion_ch4/c-4.9.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Leetcode/easy/longest_common_prefix.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,30 +176,18 @@
       <item itemvalue="Python.c-4.10" />
       <item itemvalue="Python.c-4.11" />
       <item itemvalue="Python.c-4.12" />
-      <item itemvalue="Python.c-4.9" />
       <item itemvalue="Python.pascale_traingle" />
+      <item itemvalue="Python.longest_common_prefix" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.longest_common_prefix" />
         <item itemvalue="Python.pascale_traingle" />
         <item itemvalue="Python.c-4.12" />
         <item itemvalue="Python.c-4.11" />
         <item itemvalue="Python.c-4.10" />
-        <item itemvalue="Python.c-4.9" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -209,15 +207,38 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="451" y="123" width="424" height="484" key="FileChooserDialogImpl" timestamp="1594456035212">
+      <screen x="0" y="27" width="1366" height="676" />
+    </state>
+    <state x="451" y="123" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.676@0.27.1366.676" timestamp="1594456035212" />
+    <state width="430" height="525" key="GridCell.Tab.0.bottom" timestamp="1594463912919">
+      <screen x="0" y="27" width="1366" height="676" />
+    </state>
+    <state width="430" height="525" key="GridCell.Tab.0.bottom/0.27.1366.676@0.27.1366.676" timestamp="1594463912919" />
+    <state width="430" height="525" key="GridCell.Tab.0.center" timestamp="1594463912919">
+      <screen x="0" y="27" width="1366" height="676" />
+    </state>
+    <state width="430" height="525" key="GridCell.Tab.0.center/0.27.1366.676@0.27.1366.676" timestamp="1594463912919" />
+    <state width="430" height="525" key="GridCell.Tab.0.left" timestamp="1594463912918">
+      <screen x="0" y="27" width="1366" height="676" />
+    </state>
+    <state width="430" height="525" key="GridCell.Tab.0.left/0.27.1366.676@0.27.1366.676" timestamp="1594463912918" />
+    <state width="430" height="525" key="GridCell.Tab.0.right" timestamp="1594463912919">
+      <screen x="0" y="27" width="1366" height="676" />
+    </state>
+    <state width="430" height="525" key="GridCell.Tab.0.right/0.27.1366.676@0.27.1366.676" timestamp="1594463912919" />
+    <state x="172" y="27" width="1012" height="676" key="SettingsEditor" timestamp="1594456058586">
+      <screen x="0" y="27" width="1366" height="676" />
+    </state>
+    <state x="172" y="27" width="1012" height="676" key="SettingsEditor/0.27.1366.676@0.27.1366.676" timestamp="1594456058586" />
     <state x="390" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1592218089181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
