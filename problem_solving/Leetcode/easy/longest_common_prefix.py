@@ -16,11 +16,11 @@ s = Solution()
 print(s.longestCommonPrefix(["c","ac"]))
 
 
-def is_perfix_exist(perfix):
-    for s in strs:
-        if perfix not in s:
-            return False
-    return True
+# def is_perfix_exist(perfix):
+#     for s in strs:
+#         if perfix not in s:
+#             return False
+#     return True
 
 
 # if strs:

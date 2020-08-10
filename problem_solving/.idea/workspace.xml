@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Leetcode/easy/longest_common_prefix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Leetcode/easy/longest_common_prefix.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sumup/src" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.longest_common_prefix">
@@ -167,8 +168,8 @@
       <item itemvalue="Python.c-4.10" />
       <item itemvalue="Python.c-4.11" />
       <item itemvalue="Python.c-4.12" />
-      <item itemvalue="Python.pascale_traingle" />
       <item itemvalue="Python.longest_common_prefix" />
+      <item itemvalue="Python.pascale_traingle" />
     </list>
     <recent_temporary>
       <list>
@@ -206,26 +207,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="451" y="123" width="424" height="484" key="FileChooserDialogImpl" timestamp="1594456035212">
+    <state x="451" y="123" width="424" height="484" key="FileChooserDialogImpl" timestamp="1594571870432">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
-    <state x="451" y="123" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.676@0.27.1366.676" timestamp="1594456035212" />
-    <state width="430" height="525" key="GridCell.Tab.0.bottom" timestamp="1594465169410">
+    <state x="451" y="123" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.676@0.27.1366.676" timestamp="1594571870432" />
+    <state width="430" height="525" key="GridCell.Tab.0.bottom" timestamp="1594552987719">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
-    <state width="430" height="525" key="GridCell.Tab.0.bottom/0.27.1366.676@0.27.1366.676" timestamp="1594465169410" />
-    <state width="430" height="525" key="GridCell.Tab.0.center" timestamp="1594465169410">
+    <state width="430" height="525" key="GridCell.Tab.0.bottom/0.27.1366.676@0.27.1366.676" timestamp="1594552987719" />
+    <state width="430" height="525" key="GridCell.Tab.0.center" timestamp="1594552987718">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
-    <state width="430" height="525" key="GridCell.Tab.0.center/0.27.1366.676@0.27.1366.676" timestamp="1594465169410" />
-    <state width="430" height="525" key="GridCell.Tab.0.left" timestamp="1594465169409">
+    <state width="430" height="525" key="GridCell.Tab.0.center/0.27.1366.676@0.27.1366.676" timestamp="1594552987718" />
+    <state width="430" height="525" key="GridCell.Tab.0.left" timestamp="1594552987718">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
-    <state width="430" height="525" key="GridCell.Tab.0.left/0.27.1366.676@0.27.1366.676" timestamp="1594465169409" />
-    <state width="430" height="525" key="GridCell.Tab.0.right" timestamp="1594465169410">
+    <state width="430" height="525" key="GridCell.Tab.0.left/0.27.1366.676@0.27.1366.676" timestamp="1594552987718" />
+    <state width="430" height="525" key="GridCell.Tab.0.right" timestamp="1594552987719">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
-    <state width="430" height="525" key="GridCell.Tab.0.right/0.27.1366.676@0.27.1366.676" timestamp="1594465169410" />
+    <state width="430" height="525" key="GridCell.Tab.0.right/0.27.1366.676@0.27.1366.676" timestamp="1594552987719" />
     <state x="172" y="27" width="1012" height="676" key="SettingsEditor" timestamp="1594456058586">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
