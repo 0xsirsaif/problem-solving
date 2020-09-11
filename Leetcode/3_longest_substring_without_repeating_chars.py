@@ -35,8 +35,4 @@ class Solution:
 
 
 obj = Solution()
-# print(obj.lengthOfLongestSubstring("abba"))
-
-test_cases = ["abba","bwf","cdd","aab","au","aa","","pwwkew"]
-for i in test_cases:
-    print(i, obj.lengthOfLongestSubstring(i))
+print(obj.lengthOfLongestSubstring("abba"))
