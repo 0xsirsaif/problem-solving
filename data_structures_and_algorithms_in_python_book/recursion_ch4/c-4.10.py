@@ -11,4 +11,4 @@ def calculate_logarithm(n):
         result = calculate_logarithm(division) + 1
         return result
 
-print(calculate_logarithm())
+print(calculate_logarithm(100))
