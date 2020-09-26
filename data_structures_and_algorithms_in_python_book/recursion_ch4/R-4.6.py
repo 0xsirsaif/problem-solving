@@ -1,5 +1,5 @@
 """
-to compute the harmonic number we rely o the recursive nature of the problem, and make use of the improvements of the
+to compute the harmonic number we rely on the recursive nature of the problem, and make use of the improvements of the
 tail recursion, return a tuple of two values (n, sum). sum = 1/n + previous_sum and so on....
 """
 
