@@ -16,17 +16,17 @@ class Solution:
         return head
 
 
-n11 = ListNode(80)
-n10 = ListNode(70, n11)
-n9 = ListNode(60, n10)
-n8 = ListNode(50, n9)
-n7 = ListNode(50, n8)
-n6 = ListNode(40, n7)
-n5 = ListNode(30, n6)
-n4 = ListNode(20, n5)
-n3 = ListNode(20, n4)
-n2 = ListNode(10, n3)
-n1 = ListNode(10, n2)
-
-s = Solution()
-print(s.deleteDuplicates(n1))
+# n11 = ListNode(80)
+# n10 = ListNode(70, n11)
+# n9 = ListNode(60, n10)
+# n8 = ListNode(50, n9)
+# n7 = ListNode(50, n8)
+# n6 = ListNode(40, n7)
+# n5 = ListNode(30, n6)
+# n4 = ListNode(20, n5)
+# n3 = ListNode(20, n4)
+# n2 = ListNode(10, n3)
+# n1 = ListNode(10, n2)
+#
+# s = Solution()
+# print(s.deleteDuplicates(n1))

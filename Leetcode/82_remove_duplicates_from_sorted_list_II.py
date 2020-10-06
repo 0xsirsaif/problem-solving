@@ -88,23 +88,11 @@ class SolutionB:
 # n8 = ListNodeB(10, n9)
 # n7 = ListNodeB(10, n8)
 # n6 = ListNodeB(10, n7)
-n5 = ListNodeB(30)
-n4 = ListNodeB(20, n5)
-n3 = ListNodeB(10, n4)
-n2 = ListNodeB(10, n3)
-n1 = ListNodeB(10, n2)
+# n5 = ListNodeB(30)
+# n4 = ListNodeB(20, n5)
+# n3 = ListNodeB(10, n4)
+# n2 = ListNodeB(10, n3)
+# n1 = ListNodeB(10, n2)
 
-s = Solution()
-print(s.deleteDuplicates(n1))
-
-# if curr.val == ptr.val:
-#     ptr = ptr.next
-#     count += 1
-#     if not ptr.next:
-#         head.next = None
-# else:
-#     if count > 0:
-#         head = ptr
-#     else:
-#         head = curr
-#     break
+# s = Solution()
+# print(s.deleteDuplicates(n1))
