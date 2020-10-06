@@ -12,11 +12,14 @@ class Solution:
                 curr.next = curr.next.next
             else:
                 curr = curr.next
+
         return head
 
 
-n9 = ListNode(10)
-n8 = ListNode(60, n9)
+n11 = ListNode(80)
+n10 = ListNode(70, n11)
+n9 = ListNode(60, n10)
+n8 = ListNode(50, n9)
 n7 = ListNode(50, n8)
 n6 = ListNode(40, n7)
 n5 = ListNode(30, n6)
