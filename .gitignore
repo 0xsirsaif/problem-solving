@@ -16,6 +16,7 @@ eggs/
 .eggs/
 .idea/
 /testing/
+phantomjs/
 lib/
 lib64/
 parts/
