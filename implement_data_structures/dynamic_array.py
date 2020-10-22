@@ -26,6 +26,16 @@ class DynamicArray:
         # after appending the obj, _curr_elements_num incremented by one
         self._curr_elements_num += 1
 
+    def insert(self, idx, value):
+        if self._curr_elements_num == self._capacity:
+            self._resize(2 * self._capacity)
+
+        for i in range(self._curr_elements_num, idx, -1):
+            self._low_level_arr[i] = self._low_level_arr[i-1]
+
+        self._low_level_arr[idx] = value
+        self._curr_elements_num += 1
+
     def _resize(self, capacity):
         # construct new low level array by private _make_low_level_arr method
         new_arr = self._make_low_level_arr(capacity)
@@ -40,6 +50,29 @@ class DynamicArray:
     def _make_low_level_arr(self, capacity):
         return (capacity * ctypes.py_object)()
 
+    def print_list(self):
+        result = []
+        for i in range(self._curr_elements_num):
+            result.append(self._low_level_arr[i])
+        return result
 
 A = DynamicArray()
-A.append(10)
+A.append(0)
+A.append(1)
+A.append(2)
+A.append(3)
+A.append(4)
+A.append(5)
+A.append(6)
+print(A.print_list())
+A.insert(5, 100)
+A.insert(5, 100)
+A.insert(5, 100)
+A.insert(5, 100)
+A.insert(5, 100)
+A.insert(5, 100)
+A.insert(5, 100)
+A.insert(5, 100)
+A.insert(5, 100)
+A.insert(5, 100)
+print(A.print_list())
