@@ -29,6 +29,7 @@ class DynamicArray:
         self._len += 1
 
     def insert(self, idx, value):
+        """insert at passed index"""
         # Doubling the array if it is full
         if self._len == self._capacity:
             self._resize(2 * self._capacity)
@@ -40,9 +41,17 @@ class DynamicArray:
         # increase array length by 1
         self._len += 1
 
+    def remove(self, value):
+        """remove the first occurrence of passed element"""
+        # loop until find the value
+        for i in range(self._len):
+            if self._low_level_arr[i] == value:
+                # make use of the pop method for left-shifting elements
+                self.pop(i)
+
     def pop(self, idx=None):
         # parametrized pop method
-        index = idx if idx else self._len
+        index = self._len if idx is None else idx
         # left-shifting all elements to the removed elements, shifting = removing
         for i in range(index, self._len - 1):
             self._low_level_arr[i] = self._low_level_arr[i + 1]
@@ -64,6 +73,7 @@ class DynamicArray:
         return (capacity * ctypes.py_object)()
 
     def print_list(self):
+        """return array elements in python list form, helping function for testing"""
         result = []
         for i in range(self._len):
             result.append(self._low_level_arr[i])
@@ -77,18 +87,10 @@ A.append(2)
 A.append(3)
 A.append(4)
 A.append(5)
+A.append(100)
 A.append(6)
 print(A.print_list())
-A.pop(6)
+# A.pop(6)
+A.remove(0)
 print(A.print_list())
-# A.insert(5, 100)
-# A.insert(5, 100)
-# A.insert(5, 100)
-# A.insert(5, 100)
-# A.insert(5, 100)
-# A.insert(5, 100)
-# A.insert(5, 100)
-# A.insert(5, 100)
-# A.insert(5, 100)
-# A.insert(5, 100)
-# print(A.print_list())
+
