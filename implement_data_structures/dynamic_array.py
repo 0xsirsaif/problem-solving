@@ -1,10 +1,12 @@
 import ctypes
 
+# TODO
+# Shrinking array capacity after pop element
 
 class DynamicArray:
     def __init__(self):
         # number of current items
-        self._curr_elements_num = 0
+        self._len = 0
         # the capacity of the array
         self._capacity = 1
         # construct low level array using ctype module by non public _make_low_level_arr method
@@ -12,29 +14,40 @@ class DynamicArray:
 
     def __getitem__(self, item):
         # does not support negative indexing, yet
-        if not 0 <= item < self._curr_elements_num:
+        if not 0 <= item < self._len:
             raise ImportError("Invalid Index")
         return self._low_level_arr[item]
 
     def append(self, obj):
         # if all available array cells are exhausted, we double array capacity
         # using private _resize method
-        if self._curr_elements_num == self._capacity:
+        if self._len == self._capacity:
             self._resize(2 * self._capacity)
         # if there is a free cells, _curr_elements_num refers to the index next the last occupied one
-        self._low_level_arr[self._curr_elements_num] = obj
+        self._low_level_arr[self._len] = obj
         # after appending the obj, _curr_elements_num incremented by one
-        self._curr_elements_num += 1
+        self._len += 1
 
     def insert(self, idx, value):
-        if self._curr_elements_num == self._capacity:
+        # Doubling the array if it is full
+        if self._len == self._capacity:
             self._resize(2 * self._capacity)
-
-        for i in range(self._curr_elements_num, idx, -1):
-            self._low_level_arr[i] = self._low_level_arr[i-1]
-
+        # right shifting all the elements right to the desired index
+        for i in range(self._len, idx, -1):
+            self._low_level_arr[i] = self._low_level_arr[i - 1]
+        # insert the value in the desired index
         self._low_level_arr[idx] = value
-        self._curr_elements_num += 1
+        # increase array length by 1
+        self._len += 1
+
+    def pop(self, idx=None):
+        # parametrized pop method
+        index = idx if idx else self._len
+        # left-shifting all elements to the removed elements, shifting = removing
+        for i in range(index, self._len - 1):
+            self._low_level_arr[i] = self._low_level_arr[i + 1]
+        self._len -= 1
+        # shrinking the array capacity after removing element...
 
     def _resize(self, capacity):
         # construct new low level array by private _make_low_level_arr method
@@ -52,9 +65,10 @@ class DynamicArray:
 
     def print_list(self):
         result = []
-        for i in range(self._curr_elements_num):
+        for i in range(self._len):
             result.append(self._low_level_arr[i])
         return result
+
 
 A = DynamicArray()
 A.append(0)
@@ -65,14 +79,16 @@ A.append(4)
 A.append(5)
 A.append(6)
 print(A.print_list())
-A.insert(5, 100)
-A.insert(5, 100)
-A.insert(5, 100)
-A.insert(5, 100)
-A.insert(5, 100)
-A.insert(5, 100)
-A.insert(5, 100)
-A.insert(5, 100)
-A.insert(5, 100)
-A.insert(5, 100)
+A.pop(6)
 print(A.print_list())
+# A.insert(5, 100)
+# A.insert(5, 100)
+# A.insert(5, 100)
+# A.insert(5, 100)
+# A.insert(5, 100)
+# A.insert(5, 100)
+# A.insert(5, 100)
+# A.insert(5, 100)
+# A.insert(5, 100)
+# A.insert(5, 100)
+# print(A.print_list())
