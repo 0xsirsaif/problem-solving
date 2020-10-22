@@ -58,6 +58,19 @@ class DynamicArray:
         self._len -= 1
         # shrinking the array capacity after removing element...
 
+    def extend(self, array):
+        """
+        extend method to add bunch of elements at the end of the array one time instead of calling append method
+        many times, as we can compute the additional capacity we need, so we resizing the array once
+        """
+        arr_len = len(array)
+        # resizing array by twice length of the additional array
+        if self._len + arr_len >= self._capacity:
+            self._resize(2 * arr_len)
+        # cheap append operations after computing the needed size to resize the array once
+        for i in array:
+            self.append(i)
+
     def _resize(self, capacity):
         # construct new low level array by private _make_low_level_arr method
         new_arr = self._make_low_level_arr(capacity)
@@ -91,6 +104,7 @@ A.append(100)
 A.append(6)
 print(A.print_list())
 # A.pop(6)
-A.remove(0)
+# A.remove(0)
+A.extend([100,100,100,100,100,100,100,100,100])
 print(A.print_list())
 
