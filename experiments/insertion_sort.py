@@ -13,7 +13,23 @@ def insertion_sort(arr):
             else:
                 arr[j+1] = arr[j]
                 arr[j] = hand
-        print(arr)
     return arr
 
-print(insertion_sort([5,4,3,2,1]))
+# print(insertion_sort([5,4,3,2,1]))
+
+# Better and simpler solution
+def insertion_sort_2(arr):
+    for i in range(1, len(arr)):
+        print(arr[i])
+        curr = arr[i]
+        j = i
+        while j > 0 and arr[j-1] > curr:
+            print("J :", j, "J-1 :", arr[j-1])
+            arr[j] = arr[j-1]
+            j -= 1
+        print("J :", j)
+        arr[j] = curr
+        print("==========")
+    return arr
+
+print(insertion_sort_2([5,4,3,2,1]))
