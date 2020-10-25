@@ -1,6 +1,10 @@
 from sys import getsizeof
 
+
 def list_size(n):
+    """
+    Python is not using a pure geometric progression, nor is it using arithmetic progression
+    """
     A = []
     reallocate = -1
     for k in range(n):

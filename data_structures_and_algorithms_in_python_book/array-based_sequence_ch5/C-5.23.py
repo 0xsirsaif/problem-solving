@@ -11,10 +11,12 @@ def multiple_append_operations(n):
     A = []
     for i in range(n):
         A.append(i)
+    return A
 
 
 def comprehension_append(n):
     A = [i for i in range(n)]
+    return A
 
 
 n = 100000
