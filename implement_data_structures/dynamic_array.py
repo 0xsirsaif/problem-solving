@@ -56,7 +56,10 @@ class DynamicArray:
         for i in range(index, self._len - 1):
             self._low_level_arr[i] = self._low_level_arr[i + 1]
         self._len -= 1
-        # shrinking the array capacity after removing element...
+
+        # shrinking the array capacity after removing 3/4 of array elements
+        if self._len == self._capacity//4:
+            self._resize(self._capacity // 2)
 
     def extend(self, array):
         """
@@ -72,10 +75,13 @@ class DynamicArray:
             self.append(i)
 
     def _resize(self, capacity):
+        # _range = last element to add to the new array, in case of doubling => add all elements of old array,
+        # in case of shrinking => add all elements to the (capacity//4)th index
+        _range = self._capacity if capacity > self._capacity else self._capacity // 4
         # construct new low level array by private _make_low_level_arr method
         new_arr = self._make_low_level_arr(capacity)
         # assigning all values of old array to the new one
-        for i in range(self._capacity):
+        for i in range(_range):
             new_arr[i] = self._low_level_arr[i]
         # reassign reference array to the new one
         self._low_level_arr = new_arr
@@ -92,19 +98,18 @@ class DynamicArray:
             result.append(self._low_level_arr[i])
         return result
 
+    def return_capacity_and_elements_num(self):
+        return self._capacity, self._len
 
 A = DynamicArray()
-A.append(0)
-A.append(1)
-A.append(2)
-A.append(3)
-A.append(4)
-A.append(5)
-A.append(100)
-A.append(6)
-print(A.print_list())
-# A.pop(6)
-# A.remove(0)
-A.extend([100,100,100,100,100,100,100,100,100])
-print(A.print_list())
+n = 50
 
+for i in range(n):
+    A.append(None)
+
+print(A.return_capacity_and_elements_num())
+
+for i in range(n):
+    A.pop()
+
+print(A.return_capacity_and_elements_num())
