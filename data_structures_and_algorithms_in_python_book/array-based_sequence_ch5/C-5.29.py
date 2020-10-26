@@ -1,7 +1,7 @@
 def natural_join(A, B):
-    tree = {y:z for y,z in B}
+    tree = {y: z for y, z in B}
     result = []
-    for x,y in A:
+    for x, y in A:
         z = tree.get(y)
         if z is not None:
             result.append((x, y, z))
