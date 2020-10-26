@@ -1,10 +1,14 @@
+# running time of o(n), space complexity of o(n)
 def natural_join(A, B):
+    # running time of dict comprehension = o(1) ? temporary list
+    # space complexity of dict comprehension = o(n)
     tree = {y: z for y, z in B}
     result = []
+    # o(n)
     for x, y in A:
-        z = tree.get(y)
+        z = tree.get(y) # o(1)
         if z is not None:
-            result.append((x, y, z))
+            result.append((x, y, z)) # o(1)* => o(n) for all n append operations
 
     return result
 
