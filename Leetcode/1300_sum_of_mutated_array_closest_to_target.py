@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
-    def findBestValue(self, arr: list[int], target: int) -> int:
+    def findBestValue(self, arr: List[int], target: int) -> int:
         pass
