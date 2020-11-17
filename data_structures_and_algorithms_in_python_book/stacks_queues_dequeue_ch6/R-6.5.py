@@ -1,43 +1,35 @@
-class AllReserved(Exception):
-    pass
-
-
 class Empty(Exception):
     pass
 
 
-class LimitedStack:
-    def __init__(self, maxlen=None):
-        self._data = [None for _ in range(maxlen)] if maxlen else []
-        self._element_num = 0
-        self._max_len = maxlen
+class Stack:
+    def __init__(self):
+        self._data = []
 
     def is_empty(self):
-        return self._element_num == 0
+        return len(self._data) == 0
 
     def push(self, element):
-        if self._element_num == self._max_len:
-            raise AllReserved("Limited Stack, All cells are reserved")
-
-        if self._max_len is not None:
-            self._data[self._element_num] = element
-        else:
-            self._data.append(element)
-        self._element_num += 1
+        self._data.append(element)
 
     def pop(self):
-        print(self._data)
         if self.is_empty():
             raise Empty("Empty Stack")
-        self._element_num -= 1
         return self._data.pop()
+
+    def top(self):
+        if self.is_empty():
+            raise Empty("Empty Stack")
+        return self._data[-1]
 
 
 def reverse(array):
-    stack = LimitedStack()
+    stack = Stack()
     for i in array:
         stack.push(i)
     A = []
-    for x in range(len(array)):
+    while not stack.is_empty():
         A.append(stack.pop())
     return A
+
+print(reverse([1,2,34,5,67,8,9]))
