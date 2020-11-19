@@ -27,7 +27,7 @@ class MyCircularDeque:
         if self.isFull():
             return False
 
-        # implement Right Shift
+        # Cyclic Shift
         self._front = (self._front - 1) % len(self._data)
         self._data[self._front] = element
         self._size += 1
