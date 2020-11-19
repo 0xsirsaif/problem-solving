@@ -10,7 +10,6 @@ class DeQueue:
         self._capacity = DeQueue.DEFAULT_CAPACITY
         self._size = 0
         self._front = 0
-        self._back = 0
 
     def add_last(self, element):
         if self._size == len(self._data):
@@ -18,7 +17,7 @@ class DeQueue:
         end = (self._front + self._size) % len(self._data)
         self._data[end] = element
         self._size += 1
-        self._back = (self._front + self._size -1) % len(self._data)
+        return True
 
     def delete_first(self):
         if self.is_empty():
@@ -27,24 +26,26 @@ class DeQueue:
         self._data[self._front] = None
         self._size -= 1
         self._front = (self._front + 1) % len(self._data)
+        return True
 
     def add_first(self, element):
         if self.is_full():
             self._resize(2 * len(self._data))
 
-        # implement Right Shift
-        self.rotate(1)
+        # Cyclic Shift
+        self._front = (self._front - 1) % len(self._data)
         self._data[self._front] = element
         self._size += 1
-        self._back = (self._front + self._size - 1) % len(self._data)
+        return True
 
     def delete_last(self):
         if self.is_empty():
             raise EmptyQueue("Empty Queue")
 
-        self._data[self._back] = None
+        back = (self._front + self._size - 1) % len(self._data)
+        self._data[back] = None
         self._size -= 1
-        self._back = (self._front + self._size - 1) % len(self._data)
+        return True
 
     def first(self):
         if self.is_empty():
@@ -54,7 +55,8 @@ class DeQueue:
     def last(self):
         if self.is_empty():
             raise EmptyQueue("Empty Queue !")
-        return self._data[self._back]
+        back = (self._front + self._size - 1) % len(self._data)
+        return self._data[back]
 
     def _resize(self, capacity):
         old_data = self._data
@@ -65,7 +67,6 @@ class DeQueue:
             pointer = (pointer + 1) % len(old_data)
 
         self._front = 0
-        self._back = self._size
         self._capacity = capacity
 
     def rotate(self, k):
@@ -82,4 +83,3 @@ class DeQueue:
 
     def print_queue(self):
         print(">>", self._data)
-

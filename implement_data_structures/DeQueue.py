@@ -67,7 +67,6 @@ class DeQueue:
             pointer = (pointer + 1) % len(old_data)
 
         self._front = 0
-        self._back = self._size
         self._capacity = capacity
 
     def rotate(self, k):
