@@ -39,6 +39,3 @@ class MyCircularQueue:
     def isFull(self) -> bool:
         return self._size == self._capacity
 
-    def print_queue(self):
-        print(">>", self._data)
-
