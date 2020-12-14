@@ -3,13 +3,13 @@ from typing import List
 
 class Solution:
     def minOperations(self, nums: List[int], x: int) -> int:
-        def _recur(arr, idx, result):
-            if not arr:
-                pass
-            elif len(arr) == 1:
-                pass
-            elif result == 0:
-                pass
+        def _recur():
+            pass
 
-        if not nums:
-            return -1
+        steps = []
+        _recur()
+        return 0
+
+
+s = Solution()
+print(s.minOperations([1,1,4,2,3], 5))
