@@ -20,7 +20,6 @@ def insertion_sort(arr):
 # Better and simpler solution
 def insertion_sort_2(arr):
     for i in range(1, len(arr)):
-        print(arr[i])
         curr = arr[i]
         j = i
         while j > 0 and arr[j-1] > curr:
