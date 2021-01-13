@@ -6,7 +6,7 @@ class EmptyQueue(Exception):
     pass
 
 
-class Queue:
+class Queue_Implementation:
     def __init__(self, max_len: int):
         self._front = 0
         self._size = 0

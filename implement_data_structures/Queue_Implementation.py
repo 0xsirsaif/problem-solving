@@ -2,7 +2,7 @@ class EmptyQueue(Exception):
     pass
 
 
-class Queue:
+class Queue_Implementation:
     DEFAULT_CAPACITY = 10
 
     def __init__(self):
