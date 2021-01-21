@@ -13,7 +13,6 @@ class Solution:
 
         if m == 0:
             nums1 = nums2
-            print(nums1, "???")
             return
         initial_arr_len = len(nums1)
 
