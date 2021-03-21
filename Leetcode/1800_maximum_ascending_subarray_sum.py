@@ -2,6 +2,10 @@ from typing import List
 
 
 class Solution:
+    """
+    Time Complexity => O(N)
+    Space Complexity => O(N)
+    """
     def maxAscendingSum(self, nums: List[int]) -> int:
         maximum = 0
         _sum = 0
