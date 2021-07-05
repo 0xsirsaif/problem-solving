@@ -9,7 +9,7 @@ def count_circularly_nodes(tail):
         return 0
     head = tail.next
     count = 1
-    while head and head != tail:
+    while head and head is not tail:
         count += 1
         head = head.next
     return count
