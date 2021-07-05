@@ -7,6 +7,7 @@ int main(){
 	// scanf("%d", &x);
 	// scanf(" %d", &y);
 	// printf("%d\n", x);
+	// hello world
 	// printf("%d\n", y);
 
 	scanf("%d-%d-%d", &x,&y,&z);
